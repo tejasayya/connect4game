@@ -6,7 +6,16 @@
 
 
 
-
+Steps to run the Game.
+```
+pip install -r requirements.txt
+```
+```
+git clone https://github.com/tejasayya/connect4game.git
+```
+```
+python alphaBeta_801384760.py
+```
 
 
 
@@ -15,7 +24,8 @@
 
 
 This Connect Four game implementation utilizes several algorithms to enable the AI opponent to make strategic moves. 
-##Below is an overview of each algorithm used:
+
+## Below is an overview of each algorithm used:
 
 ## 1. Random Move
 **Description:** The simplest algorithm where the AI selects a move at random from the list of valid columns that are not yet full.

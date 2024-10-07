@@ -1,4 +1,4 @@
 # connect4game
 
 
-assets/Alpha-Beta-pygame.gif
+![](https://github.com/tejasayya/connect4game/blob/main/assets/Alpha-Beta-pygame.gif)

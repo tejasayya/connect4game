@@ -8,11 +8,13 @@
 
 Steps to run the Game.
 ```
-pip install -r requirements.txt
-```
-```
 git clone https://github.com/tejasayya/connect4game.git
 ```
+
+```
+pip install -r requirements.txt
+```
+
 ```
 python alphaBeta_801384760.py
 ```

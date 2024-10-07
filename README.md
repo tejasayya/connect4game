@@ -17,7 +17,7 @@
 This Connect Four game implementation utilizes several algorithms to enable the AI opponent to make strategic moves. 
 ##Below is an overview of each algorithm used:
 
-##1. Random Move
+## 1. Random Move
 **Description:** The simplest algorithm where the AI selects a move at random from the list of valid columns that are not yet full.
 
 **Function:**
@@ -33,7 +33,7 @@ Provides a baseline AI behavior.
 Useful for testing and comparing the effectiveness of more advanced algorithms.
 
 
-##2. Minimax Algorithm without Pruning
+## 2. Minimax Algorithm without Pruning
 **Description:** The Minimax algorithm is a recursive or backtracking algorithm used in decision-making and game theory to find the optimal move for a player, assuming that the opponent is also playing optimally.
 
 **Function:**
@@ -86,7 +86,7 @@ Computationally intensive for larger depths due to exponential growth of possibl
 Does not incorporate any optimization techniques.
 
 
-##3. Alpha-Beta Pruning
+## 3. Alpha-Beta Pruning
 **Description:** An optimization of the Minimax algorithm that reduces the number of nodes evaluated in the search tree by pruning branches that cannot possibly affect the final decision.
 
 **Function:**
@@ -137,7 +137,7 @@ Uses two parameters, alpha and beta, to keep track of the minimum score that the
 Significantly reduces the computation time compared to the standard Minimax.
 
 
-##4. Alpha-Beta Pruning with Cutoff (Depth Limit)
+## 4. Alpha-Beta Pruning with Cutoff (Depth Limit)
 
 **Description:** An extension of the Alpha-Beta Pruning algorithm that includes a cutoff depth to limit how deep the algorithm searches the game tree. This is essential for managing computational resources and ensuring the AI makes timely decisions.
 
@@ -193,8 +193,8 @@ Usage:
 
 
 
-##Supporting Functions and Concepts
-###Evaluation Function (score_position)
+## Supporting Functions and Concepts
+### Evaluation Function (score_position)
 - Purpose: Provides a heuristic evaluation of the board from the AI's perspective.
 - Method: Scores the board based on potential winning lines, favoring positions that lead to a win and blocking the opponent's opportunities.
 - Factors Considered:
@@ -202,16 +202,16 @@ Usage:
   - Horizontal, vertical, and diagonal lines.
   - Number of connected pieces.
 
-###Terminal States (is_terminal_node)
+### Terminal States (is_terminal_node)
 - Purpose: Checks if the game has reached a terminal state (win or draw).
 - Usage: Determines when to stop recursion in the Minimax and Alpha-Beta algorithms.
 
-###Valid Moves (get_valid_locations)
+### Valid Moves (get_valid_locations)
 - Purpose: Generates a list of columns where a new piece can be placed.
 - Usage: Used in all algorithms to determine possible moves.
 
 
-##AI Algorithm Selection in the Game
+## AI Algorithm Selection in the Game
 The game allows players to select the AI algorithm through UI buttons:
 
 - Random Move
